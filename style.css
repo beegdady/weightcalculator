@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,200&display=swap');
+
+:root{
+    --sailor-blue: #00203f;
+    --mint: #adefd1;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Raleway",sans-serif;
+    background: var(--mint);
+    font-size: 1.2rem;
+    color: rgba(0,0,0,0.9);
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+
+.main-wrapper{
+    max-width: 1000px;
+    background: #fff;
+    max-width: 380px;
+    height: 550px;
+}
+
+.bmi-heads{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+
+}
+
+.bmi-head{
+    padding: 1rem 1.6rem ;
+    cursor: pointer;
+    background-color: var(--sailor-blue);
+    max-width: 100%;
+    /* max-width: 80% vh; */
+}
+
+.active-head{
+    background-color: #022fbe;
+}
+
+.bmi-content{
+    height: 100;
+    padding: 10px;
+}
+
+.form-group{
+    padding: .6rem;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+
+.form-group.col-3{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    align-items: center;
+    margin: .5rem 0rem;
+}
+
+.form-control{
+    width: 100%;
+    font-family: inherit;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+}
+
+
+.form-control:focus{
+    outline: 0;
+}
+
+.form-control::placeholder{
+    text-align: right;
+    opacity: 0.7;
+}
+.btns{
+    padding: 1.2rem;
+   display: flex;
+   justify-content: center;
+   /* align-items: center; */
+  
+}
+
+.btn{
+    padding: 1rem;
+    width: 120px;
+    font-family: inherit;
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+    border-radius: 10px;
+}
+
+.btn.cla:hover{
+    background-color: rgb(159, 51, 51);
+    color: white;
+}
+
+
+.btn:hover{
+    background-color:#4aaa7c;
+    color: white;
+    opacity: 0.9;
+}
+
+#bmi-si, #bmi-usc{
+    display: none;
+}
+
+
+.output{
+    display: block;
+    /* border: 1px solid; */
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+
+.show-bmi{
+    display: block!important;
+}
+
+.alert-error{
+    color: var(--sailor-blue);
+    font-weight: bold;
+    display: none;
+}
+#bmi-gender{
+    text-transform: capitalize;
+}
+
+#bmi-value{
+    font-weight: bold;
+}
+#bmi-category{
+    font-weight: 300;
+}
+
+

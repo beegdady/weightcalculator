@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="main-wrapper" id="clr">
+            <div class="bmi-heads">
+                <div id="bmi-si-heads" class="bmi-head active-head">
+                    <h2>Metric Units</h2>
+                </div>
+
+                <div id="bmi-usc-heads" class="bmi-head">
+                    <h2>US Units</h2>
+                </div>
+            </div>
+
+            <div class="bmi-content" id="bmi-si">
+                <form>
+                    <div class="form-group">
+                        <p>Age</p>
+                        <input type="text" id="age1" class="form-control" placeholder="2-120">
+                    </div>
+
+                    <div class="form-group col-3">
+                        <p>Gender</p>
+                        <div>
+                            <input type="radio" id="male" name="gender" value="male" checked>
+                            <label for="male">Male</label>
+                        </div>
+                        
+                        <div>
+                            <input type="radio" id="female" name="gender" value="female" checked>
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Height</p>
+                        <input type="text"  id="cm" class="form-control" placeholder="cm">
+                    </div>
+
+                    <div class="form-group">
+                        <p>Weight</p>
+                        <input type="text" id="kg" class="form-control" placeholder="kg">
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="bmi-content" id="bmi-usc">
+                <form>
+                    <div class="form-group">
+                        <p>Age</p>
+                        <input type="text" id="age2" class="form-control" placeholder="2-120">
+                    </div>
+
+                    <div class="form-group col-3">
+                        <p>Gender</p>
+                        <div>
+                            <input type="radio" id="male" name="gender" value="male" checked>
+                            <label for="male">Male</label>
+                        </div>
+                        
+                        <div>
+                            <input type="radio" id="female" name="gender" value="female" checked>
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-3">
+                        <p>Height</p>
+                        <div>
+                            <input type="text"  id="feet" class="form-control" placeholder="feet">
+                        </div>
+                        <div>
+                            <input type="text"  id="inches" class="form-control" placeholder="inches">
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <p>Weight</p>
+                        <input type="text" id="pounds" class="form-control" placeholder="Pounds">
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="btns">
+                <button type="button" id="calc-btn" class="btn"> Calculate </button>
+                <button type="button" id="clr-btn" class="btn cla"> Clear </button>
+            </div>
+
+            <br>
+            
+            <div class="output">
+                <span class="alert-error"> Invalid inputs</span>
+                <div class="bmi-output">
+                    <p id="bmi-gender"></p>
+                    <h3 id="bmi-value"></h3>
+                    <p id="bmi-category"></p>
+                    <a href="https://regenerative-practices-education.thinkific.com/">Courses</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
